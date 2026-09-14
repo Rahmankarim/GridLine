@@ -1,0 +1,6 @@
+import type { Metadata } from 'next'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { Reveal } from '@/components/reveal'
+import { ContactForm } from '@/components/contact-form'
+export const metadata: Metadata = { title: 'Contact | Gridline Energy', description: 'Start a conversation with the Gridline Energy team.', openGraph: { title: 'Contact Gridline Energy', description: 'Start a conversation about making energy count.', type: 'website' } }
+export default function Contact() { return <main><section className="page-hero contact-hero"><div className="container page-hero-grid"><div><p className="eyebrow">Start a conversation</p><h1>Let&apos;s make<br /><em>energy count.</em></h1></div><p className="page-hero-lede">Tell us where you are today. We&apos;ll help you see what is possible from here.</p></div></section><section className="section contact-section"><div className="container contact-grid"><Reveal><div className="contact-details"><p className="eyebrow">Find us here</p><h2>Good questions<br />start good work.</h2><div className="detail-list"><p><Mail size={18} />hello@gridline.energy</p><p><Phone size={18} />+1 415 555 0148</p><p><MapPin size={18} />San Francisco<br />California, USA</p></div></div></Reveal><Reveal delay={.12}><ContactForm /></Reveal></div></section></main> }
