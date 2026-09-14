@@ -4,7 +4,7 @@ A responsive marketing site for Gridline, an energy intelligence platform for en
 
 ## Live URL
 
-Add the deployed Vercel URL here after publishing.
+grid-line-blond.vercel.app
 
 ## Local setup
 
